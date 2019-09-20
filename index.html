@@ -20,7 +20,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>My Portfolio</h1>
+						<h1>Justin's Portfolio</h1>
 						<p>A showcase of my projects and abilities</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -28,9 +28,9 @@
 					</div>
 
 				<!-- Header -->
-					<header id="header">
+					<!-- <header id="header">
 						<a href="index.html" class="logo">Portfolio</a>
-					</header>
+					</header> -->
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -46,14 +46,14 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="https://github.com/zorro1rr" target="_blank">Justin Howard<hr />
+									<h2><a href="https://github.com/zorro1rr" target="_blank">Justin Howard<hr id="mainHr">
 									Web Developer</a></h2>
 									<p>Enthusiastic Jr. Web Developer proficient in CSS, HTML and Javascript. <br> Goal-oriented with patience and dedication to continued learning.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/weather.png" alt="" /></a>
+								<a href="https://zorro1rr.github.io/Weather_App_API/" class="image main" target="_blank"><img src="images/weather.png" alt="" /></a>
 								<p>Size responsive weather app demonstrating proficiency in HTML, CSS and basic Javascript (primarily pulling data from an API).</p>
 								<ul class="actions special">
-									<li><a href="#" class="button large">CHECK IT OUT</a></li>
+									<li><a href="https://zorro1rr.github.io/Weather_App_API/" class="button large" target="_blank">CHECK IT OUT</a></li>
 								</ul>
 							</article>
 
@@ -61,23 +61,17 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="#">“Flyo Landing Page”</a></h2>
+										<h2><a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" target="_blank">“Flyo Landing Page”</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/fylo.png" alt="" /></a>
+									<a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" class="image fit" target="_blank"><img src="images/fylo.png" alt="" /></a>
 									<p>Created a mock website project using HTML and CSS with two other developers to showcase group collaboration skills on github (ensuring local feature branches are up to date with the production branch before making edits, then merging changes/resolving merge conflicts before pushing to the remote production branch).</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Doggo Friend App</a></h2>
+										<h2><a href="https://zorro1rr.github.io/Doggo/" target="_blank">Doggo Friend App</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/doggo.png" alt="" /></a>
-									<p>Silly website that pulls random dog images from <a href="https://dog.ceo/dog-api/" target="_blank">https://dog.ceo/dog-api/</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<a href="https://zorro1rr.github.io/Doggo/" class="image fit" target="_blank"><img src="images/doggo.png" alt="" /></a>
+									<p>Silly website that pulls random dog images from an API</p>
 								</article>
 
 							</section>
@@ -123,21 +117,24 @@
 							</form>
 						</section> -->
 						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>455 W 200 N Unit 217<br />
+							<hr id="aHr">
+							<section class="alt" id="addy">
+								<h3>Address:</h3>
+								<p id="aP">455 W 200 N Unit 217<br />
 								Salt Lake City, UT 84103</p>
+
 							</section>
-							<section>
-								<h3>Phone</h3>
+							<section id="phone">
+								<h3>Phone:</h3>
 								<p>561-601-6167</p>
 							</section>
-							<section>
+							<hr id="eHr">
+							<section id="email">
 								<h3>Email</h3>
 								<p>JustinHoward.web@gmail.com</p>
 							</section>
-							<section>
-								<h3>Social</h3>
+							<section id="social">
+								<h3>Social:</h3>
 								<ul class="icons alt">
 									<li>
 										<a id="icon" href="https://www.linkedin.com/in/justin-howard-087634193/" target="_blank"><ion-icon id="icon1" name="logo-linkedin"</ion-icon></a>
@@ -145,6 +142,7 @@
 									<li><a href="https://github.com/zorro1rr" target="_blank" id="icon2" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
+							<hr id="sHr">
 						</section>
 					</footer>
 

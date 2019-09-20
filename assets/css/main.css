@@ -181,7 +181,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		text-decoration: none;
 	}
 
@@ -289,7 +288,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px;
+		/* border-bottom: solid 2px; */
 		margin: 3rem 0;
 	}
 
@@ -3307,7 +3306,8 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 0rem 4rem 6rem 4rem ;
+		padding: 6rem 4rem 6rem 4rem ;
+    margin-top: 2rem;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3332,7 +3332,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3788,8 +3788,8 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			/* padding: 4rem 4rem 0rem 4rem ;
+			border-top: solid 2px #eeeeee; */
 			margin: 0;
 		}
 
@@ -3802,7 +3802,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 8rem 8rem 2rem 8rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -3984,6 +3984,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+    padding: 10px;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -4208,6 +4209,27 @@ input, select, textarea {
 			color: #e2e2e2;
 		}
 
+    #addy {
+      padding: 3rem 4rem 3rem 4rem ;
+    }
+    #phone {
+      padding: 0rem 4rem 0rem 4rem ;
+    }
+    #email {
+      padding: 2rem 4rem 0rem 4rem ;
+    }
+    #social {
+      padding: 0rem 0rem 0rem 0rem ;
+    }
+
+    #sHr{
+      margin-left: 0rem;
+    }
+    }
+    #aP {
+    maring-left: 0px;
+    }
+
 		#footer > section {
 			-moz-flex-basis: 50%;
 			-webkit-flex-basis: 50%;
@@ -4264,12 +4286,8 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
-				}
 
-					#footer > section.split.contact > section > * {
-						margin-bottom: 0;
-					}
+				}
 
 					#footer > section.split.contact > section > :first-child {
 						-moz-flex-shrink: 0;
@@ -4417,7 +4435,7 @@ input, select, textarea {
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
+		margin: 4rem auto 2rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
@@ -4710,3 +4728,21 @@ input, select, textarea {
 		}
 
 	} */
+
+hr {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin: 0;
+}
+
+#eHr{
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+
+#aHr{
+  margin-left: 0rem !important;
+}
+#mainHr {
+  margin: 2rem;
+}
