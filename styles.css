@@ -1,0 +1,836 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+html,
+.body {
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.canvas {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: #010305;
+  display: flex;
+  justify-content: center;
+}
+
+#particles-js {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  color: green;
+}
+
+.intro {
+  color: #ffffff;
+  width: 321px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.intro hr {
+  margin-bottom: 15px;
+}
+
+.homeDiv {
+  margin-top: -50px;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.view {
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  background: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  width: 225px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 15px 5px 5px 5px;
+}
+.view:hover {
+  width: 250px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 1),
+    inset 0px 0px 10px rgba(255, 255, 255, 1);
+}
+.view span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.view span:after {
+  content: "\1F817";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 2.5rem;
+  margin-right: -10px;
+  margin-top: -18px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+.view:hover span {
+  padding-right: 25px;
+}
+.view:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.flexdesk {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  background-color: #0a0e13;
+  border-bottom: 3px solid #18bfef;
+  text-align: left;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  height: 50px;
+  transition: top 1s;
+  z-index: 99;
+}
+.flexdesk a:hover {
+  color: #efc418;
+}
+
+.flexdesk.active {
+  animation: popDown 0.5s;
+  top: 0;
+  color: #ffffff;
+  position: fixed;
+}
+
+@keyframes popDown {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0px;
+  }
+}
+#homeLink.active {
+  color: #efc418;
+}
+#aboutLink.active {
+  color: #efc418;
+}
+#portLink.active {
+  color: #efc418;
+}
+#contactLink.active {
+  color: #efc418;
+}
+
+.page-link {
+  margin: 0 20px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+#content {
+  width: 100%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 6rem;
+}
+#about h2 {
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  color: #444649;
+  margin-top: 2rem;
+  font-size: 30pt;
+  position: relative;
+  opacity: 0;
+}
+
+#about h2.active {
+  animation: slideInLeft 0.75s ease-in-out;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+#hr {
+  color: #444649;
+  background-color: #444649;
+  width: 80px;
+  height: 5px;
+  margin: 0.5rem 0 6rem 0;
+  border: none;
+  opacity: 0;
+  position: relative;
+}
+
+#hr.active {
+  animation: slideInLeft 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+#aboutContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+}
+#profile.active {
+  animation: slideInLeft 0.75s ease-in-out;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+#profile p {
+  color: #444649;
+  font-size: 15pt;
+  font-weight: 600;
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+#skills {
+  color: #444649;
+  display: flex;
+  flex-direction: column;
+  margin: -4rem 0 2rem 0;
+  font-size: 12pt;
+}
+#skills div {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+#html {
+  margin-left: -17px;
+  padding-right: 17px;
+}
+#htmlDiv {
+  position: relative;
+  opacity: 0;
+}
+#htmlDiv.active {
+  animation: slideInRight 0.75s;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+#css {
+  padding-right: 31px;
+}
+#cssDiv {
+  position: relative;
+  opacity: 0;
+}
+#cssDiv.active {
+  animation: slideInRight 0.75s ease-in-out;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+#js {
+  padding-right: 36px;
+}
+#jsDiv {
+  position: relative;
+  opacity: 0;
+}
+#jsDiv.active {
+  animation: slideInRight 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+#react {
+  margin: 0 51px 0 15px;
+  width: 134px;
+}
+#reactDiv {
+  position: relative;
+  opacity: 0;
+}
+#reactDiv.active {
+  animation: slideInRight 0.85s ease-in;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+#reactUl {
+  margin-top: 38px;
+}
+#portCont {
+  background-color: white;
+  width: 92.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolio {
+  background-color: #212931;
+  color: #444649;
+  font-size: 14pt;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio a {
+  color: #444649;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
+
+#portfolio a:visited {
+  color: #444649;
+  text-decoration: none;
+}
+#portfolio a:hover {
+  color: #18bfef;
+}
+#portfolio p {
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+#portfolio img {
+  margin: 1rem 0;
+}
+#portH2 {
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  color: #444649;
+  font-size: 30pt;
+  opacity: 0;
+  position: relative;
+}
+#portH2.active {
+  animation: slideInRight 0.75s ease-in-out;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+#portHr {
+  color: #444649;
+  background-color: #444649;
+  width: 110px;
+  height: 5px;
+  margin-top: 0.5rem;
+  border: none;
+  opacity: 0;
+  position: relative;
+}
+#portHr.active {
+  animation: slideInRight 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+#checkIt {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  margin: 1rem;
+  padding: 20px;
+  border: 4px solid #494949;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+#checkIt:hover {
+  color: #18bfef;
+  background: #ffffff;
+  border-color: #18bfef;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+#checkIt:visited {
+  text-decoration: none;
+  color: #494949;
+}
+#Row {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  width: 100%;
+}
+
+#capstone {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: relative;
+}
+#capstone.active {
+  animation: slideInBottom 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInBottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+#capstone img {
+  cursor: pointer;
+}
+
+#project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  text-align: center;
+  margin: 1rem;
+  max-height: 450px;
+}
+.project1 {
+  opacity: 0;
+  position: relative;
+}
+.project1.active {
+  animation: slideInLeft 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.project2 {
+  opacity: 0;
+  position: relative;
+}
+.project2.active {
+  animation: slideInRight 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.project3 {
+  opacity: 0;
+  position: relative;
+}
+.project3.active {
+  animation: slideInLeft 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.project4 {
+  opacity: 0;
+  position: relative;
+}
+.project4.active {
+  animation: slideInRight 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.project5 {
+  opacity: 0;
+  position: relative;
+}
+.project5.active {
+  animation: slideInLeft 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.project6 {
+  opacity: 0;
+  position: relative;
+}
+.project6.active {
+  animation: slideInRight 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+#project img {
+  cursor: pointer;
+  max-width: 600px;
+  margin: 1rem 0;
+  transition: transform 0.2s;
+}
+#project img:hover {
+  transform: scale(1.02);
+}
+
+#rps {
+  padding: 12px 0;
+}
+
+#contact {
+  min-height: 100vh;
+  background-color: #212931;
+}
+#svgDiv {
+  display: flex;
+  justify-content: center;
+}
+#contactDiv {
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h2 {
+  font-size: 30pt;
+  color: #ffffff;
+}
+#aboutH2 {
+  opacity: 0;
+  position: relative;
+}
+
+#aboutH2.active {
+  animation: slideInLeft 0.75s ease-in-out;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+#cHr {
+  color: #ffffff;
+  background-color: #ffffff;
+  width: 110px;
+  height: 5px;
+  margin-top: 0.5rem;
+  border: none;
+  opacity: 0;
+  position: relative;
+}
+#cHr.active {
+  animation: slideInLeft 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+#submitDiv {
+  margin-top: 2rem;
+  width: 30%;
+  opacity: 0;
+  position: relative;
+}
+#submitDiv.active {
+  animation: popIn 0.75s ease-in;
+  opacity: 1;
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.25);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#contact textarea {
+  min-height: 12rem;
+}
+fieldset {
+  margin: 0;
+  border: none;
+}
+#contact textarea,
+input,
+#submit {
+  background: #1e242c;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+#submit {
+  width: 30%;
+  align-self: center;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+#submit:hover {
+  background-color: #18bfef;
+}
+
+#footer {
+  padding: 70px 0 75px 0;
+  background-color: #24374b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#iconRow {
+  display: flex;
+}
+#icon a {
+  cursor: pointer;
+  font-size: 18pt;
+  height: 55px;
+  width: 55px;
+  margin: 0 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #262f38;
+  color: #ffffff;
+}
+#icon a:hover {
+  color: #0a0e13;
+  background: #04c2c9;
+  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  transform: scale(1.05);
+}
+
+#iconSvg:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+#iconSvg {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  transition: 0.5s;
+}
+#iconSvg:hover {
+  color: #0a0e13;
+  background: #04c2c9;
+  transform: rotateY(360deg);
+}
+
+#iconSvg:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+#toTop {
+  background: #efc418;
+  color: #ffffff;
+  cursor: pointer;
+  height: 50px;
+  line-height: 36pt;
+  width: 47px;
+  border: none;
+  margin-top: 6rem;
+  margin-bottom: -136px;
+}
+#toTop a {
+  font-weight: 600;
+  font-size: 37pt;
+  color: #0a0e13;
+  text-decoration: none;
+  border: none;
+  text-decoration: #ffffff;
+}
+.form-elements {
+  display: flex;
+  flex-direction: column;
+}
+#thanks {
+  color: #ffffff;
+}

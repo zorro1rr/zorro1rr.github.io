@@ -1,184 +1,250 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Justin Howard Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"> -->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Portfolio-Justin Howard</title>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="home">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        <div class="canvas" id="particles-js">
+            <div class="homeDiv">
+                <h1 class="intro"><span class="highlight">Justin Howard</span> <hr></h1>
+                <div class="intro">Web Developer</div>
+                <a class="view" href="#portfolio1"><span>View my Portfolio</a>
+            </div>
+        </div>
+        <nav class="flexdesk">
+            <div class="link-wrap">
+                <a class="page-link" href="#home" id="homeLink">home</a>
+                <a class="page-link" href="#about" id="aboutLink">about</a>
+                <a class="page-link" href="#portfolio1" id="portLink">portfolio</a>
+                <a class="page-link" href="#contact" id="contactLink">contact</a>
+            </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+      </section>
+  
+<section id="content">
+    <div id="about">
+        <h2>ABOUT</h2>
+        <hr id="hr">
+        <div id="aboutContent">
+            <div id="profile">
+                <img id="profilePic" src="./images/profileHex.png" alt="picture of justin howard">
+                <p>
+                Hello, my name is Justin Howard. I'm an enthusiastic front-end web-developer proficient in HTML5, CSS3, JavaScript and React.
+                I have a goal-oriented work style and a passion for continuous learning of my craft!
+                </p>
+            </div>
+            <div id="skills">
+                <div id="htmlDiv">
+                    <img src="./images/HTML.png" alt="h t m l" id="html">
+                    <ul>
+                        <li>Proper Semantic Markup</li>
+                        <li>Disabled Accessibile</li>
+                    </ul>
+                </div>
+                <div id="cssDiv">
+                    <img src="./images/CSS.png" alt="c s s" id="css">
+                    <ul>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>SCSS</li>
+                        <li>Animations</li>
+                        <li>Responsive designs that work on all screen sizes</li>
+                    </ul>
+                </div>
+                <div id="jsDiv">   
+                    <img src="./images/JS.png" alt="JavaScript" id="js"> 
+                    <ul>
+                        <li>API</li>
+                        <li>Object Oriented Javascript</li>
+                        <li>Higher Order Functions / CallBacks</li>
+                        <li>Synchronous / Asynchronous Behavior - Promises & Async/Await</li>
+                        <li>Algorithms & More</li>
+                    </ul>
+                </div>
+                <div id="reactDiv">
+                    <img src="./images/React.png" alt="React" id="react">
+                        <ul id="reactUl">
+                            <li>JSX</li>
+                            <li>Components and Props</li>
+                            <li>Lists and Keys</li>
+                            <li>State, Lifecycle, etc.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio1"></div>
+    </div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Justin's Portfolio</h1>
-						<p>A showcase of my projects and abilities</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/justin-howard-087634193/" target="_blank"><ion-icon  name="logo-linkedin" id="iC"</ion-icon></a></li>
-							<li><a href="https://github.com/zorro1rr" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/zorro1rr" target="_blank">Justin Howard<hr id="mainHr">
-									Web Developer</a></h2>
-									<p>Enthusiastic Web Developer proficient in CSS, HTML and Javascript. <br> Goal-oriented with patience and dedication to continued learning.</p>
-								</header>
-								<a href="https://zorro1rr.github.io/Grooving/" class="image main" target="_blank"><img src="images/Grooving.png" alt="" /></a>
-								<p>App built with React that fetches music data from the Spotify api and allows users to cultivate a playlist that can be uploaded to their Spotify App.</p>
-								<ul class="actions special">
-									<li><a href="https://zorro1rr.github.io/Grooving/" class="button large" target="_blank">CHECK IT OUT</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/Mighty-Tasty/" target="_blank">Mighty Tasty!</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/Mighty-Tasty/" class="image fit" target="_blank"><img src="images/mighty tasty.png" alt="" /></a>
-									<p>App built with React that provides users with information about local businesses via the Yelp api</p>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/Weather_App_API/" target="_blank">Weather App</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/Weather_App_API/" class="image fit" target="_blank"><img src="images/weather.png" alt="" /></a>
-									<p>This weather app built with vanilla JavaScript showcases pulling and rendering weather api data. A switch statement is then run that sets the background image to reflect the weather description.</p>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/monster-guessing-game/" target="_blank">Monster Shuffle Guessing Game</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/monster-guessing-game/" class="image fit" target="_blank"><img src="images/monster.png" alt="" /></a>
-									<p>This project is a guessing game (and win/loss tracker) made with vanilla Javascript that hides a shuffled array of monster images (and 1 sock) behind a grid of "door" buttons. When a button is clicked, the monster/sock is revealed. If you find all of the monsters before the sock you win!</p>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/rock-paper-scissors/" target="_blank">Rock Paper Scissors</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/rock-paper-scissors/" class="image fit" target="_blank"><img src="images/rock paper scissors.png" alt="" /></a>
-									<p>This is a randomized rock paper scissors game built with vanilla JavaScript. </p>
-								</article/>
-
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/Random_Ron/" target="_blank">Random Ron</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/Random_Ron/" class="image fit" target="_blank"><img src="images/Random Ron.png" alt="" /></a>
-									<p>Project demonstrating api pull using promise/fetch. Additionally, it checks to see if the quote was used in the last 50 fetches and runs the fetch again if there is a match</p>
-								</article>
-
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/Doggo-API/" target="_blank">Doggo Friend App</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/Doggo-API/" class="image fit" target="_blank"><img src="images/doggo.png" alt="" /></a>
-									<p>This silly website that pulls and renders random dog images. </p>
-								</article>
+        
 
 
+    <div id="portfolio">
+        <svg id="portsvg"
+        preserveAspectRatio="none"
+        viewBox="0 0 100 102"
+        height="75"
+        width="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="svgcolor-light"
+      >
+            <path d="M0 0 L50 1200 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div id="portCont">
 
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/WeatherAppPlugin/" target="_blank">Weather App Plugin</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/WeatherAppPlugin/" class="image fit" target="_blank"><img src="images/weather app.png" alt="" /></a>
-									<p>Weather App that uses a promise/fetch within another promise/fetch to get user location (in first promise) and then pull weather API data based on the former's result. Additionally, developers may pass in selectors in a plugin at the bottom of the script to allow them to easily modify things like the weather description or Fahrenheit/Celsius.</p>
-								</article>
+            <h2 id="portH2">PROJECTS</h2>
+            <hr id="portHr">
+            <div id="capstone">
+                <a href="https://zorro1rr.github.io/grooving/" target="_blank"><img src="./images/grooving2.gif"/></a>
+                <p>My capstone app built with React that allows users to cultivate a playlist that can be uploaded to their personal Spotify account.</p>
+                <p>Note: User will be directed to login to their spotify account on page load***</p>
+                <button id="checkIt"><a href="https://zorro1rr.github.io/grooving/" target="_blank"></a>CHECK IT OUT</button>
+                <p>GitHub: <a href="https://github.com/zorro1rr/grooving">https://github.com/zorro1rr/grooving</a></p>
+                
+            </div>
+        <div id="Row">
+            <div id="project" class="project1">
+                <h2><a href="https://zorro1rr.github.io/Mighty-Tasty/" target="_blank">Mighty Tasty!</a></h2>
+                <a href="https://zorro1rr.github.io/Mighty-Tasty/" target="_blank"> <img src="./images/mighty-tasty.gif" alt="gif of mighty-tasty app"></a>
+                <p>App built with React that provides users with information about local businesses via the Yelp api</p>
+                <p><a href="https://github.com/zorro1rr/Mighty-Tasty">https://github.com/zorro1rr/Mighty-Tasty</a></p>
+            </div>
+                
+            <div id="project" class="project2">
+                <h2><a href="https://zorro1rr.github.io/Weather_App_API/" target="_blank">Weather App</a></h2>
+                <a href="https://zorro1rr.github.io/Weather_App_API/" target="_blank">  <img src="./images/weather.gif" alt="gif of weather app">  </a>
+            
+                <p>Weather App written in Vanilla JS</p>
+                <p><a href="https://github.com/zorro1rr/Weather_App_API">https://github.com/zorro1rr/Weather_App_API</a></p>
+            </div>      
+        </div>
 
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/NYT_API/" target="_blank">New York Times Top Headlines</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/NYT_API/" class="image fit" target="_blank"><img src="images/NYT.png" alt="" /></a>
-									<p>This project demonstrates pulling the New York Times news articles API. The top three articles of 3 different (interchangeable in JS variable) topics are rendered to the page.</p>
-								</article>
+        <div id="Row">
+            <div id="project" class="project3">
+                <h2><a href="https://zorro1rr.github.io/monster-guessing-game/" target="_blank">AHHH MONSTERS!!!</a></h2>
+                <a href="https://zorro1rr.github.io/monster-guessing-game/" target="_blank"><img src="./images/monster.png" alt="image of monster game"></a> 
+                <p>Guessing game built with Vanilla JS</p>
+                <p><a href="https://github.com/zorro1rr/monster-guessing-game">https://github.com/zorro1rr/monster-guessing-game</a></p>
+            </div>
+                
+            <div id="project" class="project4">
+                <h2><a href="https://zorro1rr.github.io/rock-paper-scissors/" target="_blank">Rock Paper Scissors</a></h2>
+                <a href="https://zorro1rr.github.io/rock-paper-scissors/" target="_blank"><img id="rps" src="./images/rock paper scissors.png" alt="image of rock paper scissors game">  </a>
+                <p>Play a game of rock papper scissors!</p>
+                <p><a href="https://github.com/zorro1rr/rock-paper-scissors">https://github.com/zorro1rr/rock-paper-scissors</a></p>
+            </div>
+        </div>
 
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/color-changer/" target="_blank">Color Changer</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/color-changer/" class="image fit" target="_blank"><img src="images/Color.png" alt="" /></a>
-									<p>React App that changes the background to a random color on button click.</p>
-								</article>
+        <div id="Row">
+            <div id="project" class="project5">
+                <h2><a href="https://zorro1rr.github.io/NYT_API/" target="_blank">New York Times Headlines</a></h2>
+                <a href="https://zorro1rr.github.io/NYT_API/" target="_blank"><img src="./images/NYT.png" alt="screenshot of NYT API project"></a> 
+                <p>This projects ultizes the NYT API to serve users links to the top headlines of the day/</p>
+                <p><a href="https://github.com/zorro1rr/WeatherAppPlugin">https://github.com/zorro1rr/WeatherAppPlugin</a></p>
+            </div>
+                
+            <div id="project" class="project6">
+                <h2><a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" target="_blank">Flyo Landing Page</a></h2>
+                <a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" target="_blank"><img src="./images/fylo.png" alt="image of fylo landing page">  </a>
+                <p>I helped create a mock website project using HTML and CSS with two other developers to showcase version control on github.</p>
+                <p><a href="https://github.com/zorro1rr/fewd-fylo-landing-page">https://github.com/zorro1rr/fewd-fylo-landing-page</a></p>
+            </div>
+        </div>
+    </div>
 
-								<article>
-									<header>
-										<h2><a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" target="_blank">“Flyo Landing Page”</a></h2>
-									</header>
-									<a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" class="image fit" target="_blank"><img src="images/fylo.png" alt="" /></a>
-									<p>I helped create a mock website project using HTML and CSS with two other developers to showcase version control on github.</p>
-								</article>
-
-
-
-					</section>
-
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<hr id="aHr">
-							<section class="alt" id="addy">
-								<h3>Address:</h3>
-								<p id="aP">455 W 200 N Unit 217<br />
-								Salt Lake City, UT 84103</p>
-
-							</section>
-							<section id="phone">
-								<h3>Phone:</h3>
-								<p>561-601-6167</p>
-							</section>
-							<hr id="eHr">
-							<section id="email">
-								<h3>Email</h3>
-								<p>JustinHoward.web@gmail.com</p>
-							</section>
-							<section id="social">
-								<h3>Social:</h3>
-								<ul class="icons alt">
-									<li>
-										<a id="icon" href="https://www.linkedin.com/in/justin-howard-087634193/" target="_blank"><ion-icon id="icon1" name="logo-linkedin"</ion-icon></a>
-									</li>
-									<li><a href="https://github.com/zorro1rr" target="_blank" id="icon2" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-							<hr id="sHr">
-						</section>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-	</body>
+</div>
+<div id="contact">
+    <div id="svgDiv">
+        <svg id="svg"
+        preserveAspectRatio="none"
+        viewBox="0 0 100 102"
+        height="75"
+        width="92.5%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="svgcolor-light"
+        >
+    
+            <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+    </div>
+    <div id=contactDiv>
+        <h2 id="aboutH2">CONTACT</h2>
+        <hr id="cHr">
+        <div id="submitDiv">
+            <form
+            class="gform"
+            method="POST"
+            data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbzxgWAjJC0kCT8YkrS50IjRwFxUq7GgqkHCiYU0/exec"
+          >
+          <div class="form-elements">
+            <fieldset class="pure-group">
+              <input id="name" name="name" placeholder="Name" />
+            </fieldset>
+            <fieldset class="pure-group">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value=""
+                required
+                placeholder="Email"
+              />
+            </fieldset>
+            <fieldset class="pure-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+              ></textarea>
+            </fieldset>
+            <button id="submit">
+                SUBMIT
+              </button>
+            </div>
+        </div>
+        <button id="toTop">
+            <a href="#home">	
+               &#8682;</a>
+       </button>
+       <div id="thanks"></div>
+    </div>
+    <div id="footer">
+        <div id="iconRow">
+            <div id="icon">
+                <a href="https://github.com/zorro1rr" target="_blank"><ion-icon name="logo-github" id="iconSvg"></ion-icon></a>
+            </div>
+            <div id="icon">
+                <a href="https://www.facebook.com/profile.php?id=100003091600783" target="_blank"><ion-icon name="logo-facebook" id="iconSvg"></ion-icon></a>
+            </div>
+            <div id="icon">
+                <a href="https://www.linkedin.com/in/justin-howard-087634193/" target="_blank"><ion-icon name="logo-linkedin" id="iconSvg"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json', function(){
+    });
+  </script>
+</body>
+</html>
+    
+</body>
 </html>
