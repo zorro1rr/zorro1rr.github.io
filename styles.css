@@ -220,6 +220,7 @@ html,
   justify-content: space-around;
 }
 #profile {
+  margin-top: -1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,6 +241,10 @@ html,
     left: 0;
     opacity: 1;
   }
+}
+
+#profile img {
+  margin-top: 1rem;
 }
 
 #profile p {
@@ -284,8 +289,14 @@ html,
     opacity: 1;
   }
 }
+#textDiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: -1rem;
+}
 #css {
   padding-right: 31px;
+  margin-right: 1rem;
 }
 #cssDiv {
   position: relative;
@@ -307,6 +318,7 @@ html,
 }
 #js {
   padding-right: 36px;
+  margin-right: 1rem;
 }
 #jsDiv {
   position: relative;
@@ -328,7 +340,7 @@ html,
 }
 
 #react {
-  margin: 0 51px 0 15px;
+  margin: 0 61px 0 15px;
   width: 134px;
 }
 #reactDiv {
