@@ -25,6 +25,7 @@ html,
 }
 
 #particles-js {
+  /* position: absolute; */
   width: 100%;
   height: 100%;
 }
@@ -159,7 +160,6 @@ html,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   margin-bottom: 6rem;
 }
 #about h2 {
@@ -244,6 +244,8 @@ html,
 
 #profile img {
   margin-top: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 #profile p {
@@ -266,10 +268,15 @@ html,
   align-items: center;
   font-weight: 600;
 }
+
 #html {
   margin-left: -17px;
   padding-right: 17px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
+
 #htmlDiv {
   position: relative;
   opacity: 0;
@@ -375,10 +382,10 @@ html,
   background-color: #212931;
   color: #444649;
   font-size: 14pt;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 #portfolio a {
   color: #444649;
@@ -489,6 +496,7 @@ html,
   flex-direction: column;
   opacity: 0;
   position: relative;
+  padding: 0 2rem 0 2rem;
 }
 #capstone.active {
   animation: slideInBottom 0.75s ease-in;
@@ -506,13 +514,14 @@ html,
 }
 #capstone img {
   cursor: pointer;
+  max-width: 100%;
+  height: auto;
 }
 
 #project {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 600px;
   text-align: center;
   margin: 1rem;
   max-height: 450px;
@@ -628,9 +637,10 @@ html,
 
 #project img {
   cursor: pointer;
-  max-width: 600px;
   margin: 1rem 0;
   transition: transform 0.2s;
+  max-width: 100%;
+  height: auto;
 }
 #project img:hover {
   transform: scale(1.02);
@@ -641,7 +651,6 @@ html,
 }
 
 #contact {
-  min-height: 100vh;
   background-color: #212931;
 }
 #svgDiv {
@@ -709,6 +718,7 @@ html,
   width: 30%;
   opacity: 0;
   position: relative;
+  min-width: 500px;
 }
 #submitDiv.active {
   animation: popIn 0.75s ease-in;
@@ -844,4 +854,94 @@ input,
 }
 #thanks {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1364px) {
+  #Row {
+    padding: 5rem 0;
+  }
+  #checkIt {
+    font-size: 12pt;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  #Row p {
+    font-size: 12pt;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #Row {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+  #project {
+    margin-top: 3rem;
+  }
+  .flexdesk {
+    justify-content: center;
+  }
+  .page-link {
+    margin: 0 10px;
+  }
+  #profile p {
+    font-size: 12pt;
+  }
+  #skills {
+    font-size: 10pt;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #aboutContent {
+    flex-direction: column;
+  }
+  #profile {
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  #submitDiv {
+    min-width: 300px;
+  }
+  .page-link {
+    margin: 0 5px;
+    font-size: 10pt;
+  }
+  #Row {
+    font-size: 10pt;
+  }
+  #portCont {
+    width: 100%;
+  }
+  #portfolio {
+    background-color: #ffffff;
+  }
+  .intro {
+    font-size: 12pt;
+  }
+  .view {
+    font-size: 10pt;
+  }
+  #css {
+    padding-right: 0;
+  }
+  #js {
+    padding-right: 0;
+  }
+  #react {
+    padding-right: 0;
+    margin: 0 33px 0 15px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #submitDiv {
+    min-width: 200px;
+  }
+  #content {
+    overflow-x: auto;
+  }
 }
