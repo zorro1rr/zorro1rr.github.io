@@ -403,6 +403,7 @@ html,
 #portfolio p {
   font-weight: 600;
   margin: 0 0 0.5rem 0;
+  max-width: 600px;
 }
 #portfolio img {
   margin: 1rem 0;
@@ -516,6 +517,10 @@ html,
   cursor: pointer;
   max-width: 100%;
   height: auto;
+}
+
+#capstone p {
+  max-width: 1200px;
 }
 
 #project {
