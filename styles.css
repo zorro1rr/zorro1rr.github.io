@@ -484,7 +484,7 @@ html,
   text-decoration: none;
   color: #494949;
 }
-#Row {
+.Row {
   display: flex;
   justify-content: space-around;
   padding: 5rem;
@@ -523,7 +523,7 @@ html,
   max-width: 1200px;
 }
 
-#project {
+.project {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -531,11 +531,11 @@ html,
   margin: 1rem;
   max-height: 450px;
 }
-.project1 {
+#project1 {
   opacity: 0;
   position: relative;
 }
-.project1.active {
+#project1.active {
   animation: slideInLeft 0.75s ease-in;
   opacity: 1;
 }
@@ -549,11 +549,11 @@ html,
     opacity: 1;
   }
 }
-.project2 {
+#project2 {
   opacity: 0;
   position: relative;
 }
-.project2.active {
+#project2.active {
   animation: slideInRight 0.75s ease-in;
   opacity: 1;
 }
@@ -567,11 +567,11 @@ html,
     opacity: 1;
   }
 }
-.project3 {
+#project3 {
   opacity: 0;
   position: relative;
 }
-.project3.active {
+#project3.active {
   animation: slideInLeft 0.75s ease-in;
   opacity: 1;
 }
@@ -585,11 +585,11 @@ html,
     opacity: 1;
   }
 }
-.project4 {
+#project4 {
   opacity: 0;
   position: relative;
 }
-.project4.active {
+#project4.active {
   animation: slideInRight 0.75s ease-in;
   opacity: 1;
 }
@@ -603,11 +603,11 @@ html,
     opacity: 1;
   }
 }
-.project5 {
+#project5 {
   opacity: 0;
   position: relative;
 }
-.project5.active {
+#project5.active {
   animation: slideInLeft 0.75s ease-in;
   opacity: 1;
 }
@@ -621,11 +621,11 @@ html,
     opacity: 1;
   }
 }
-.project6 {
+#project6 {
   opacity: 0;
   position: relative;
 }
-.project6.active {
+#project6.active {
   animation: slideInRight 0.75s ease-in;
   opacity: 1;
 }
@@ -640,14 +640,14 @@ html,
   }
 }
 
-#project img {
+.project img {
   cursor: pointer;
   margin: 1rem 0;
   transition: transform 0.2s;
   max-width: 100%;
   height: auto;
 }
-#project img:hover {
+.project img:hover {
   transform: scale(1.02);
 }
 
@@ -782,7 +782,7 @@ input,
 #iconRow {
   display: flex;
 }
-#icon a {
+.icon a {
   cursor: pointer;
   font-size: 18pt;
   height: 55px;
@@ -795,14 +795,14 @@ input,
   background: #262f38;
   color: #ffffff;
 }
-#icon a:hover {
+.icon a:hover {
   color: #0a0e13;
   background: #04c2c9;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(1.05);
 }
 
-#iconSvg:before {
+.iconSvg:before {
   position: absolute;
   top: 100%;
   left: 0;
@@ -812,19 +812,19 @@ input,
   z-index: 2;
 }
 
-#iconSvg {
+.iconSvg {
   height: 45px;
   width: 45px;
   position: relative;
   transition: 0.5s;
 }
-#iconSvg:hover {
+.iconSvg:hover {
   color: #0a0e13;
   background: #04c2c9;
   transform: rotateY(360deg);
 }
 
-#iconSvg:before {
+.iconSvg:before {
   position: absolute;
   top: 100%;
   left: 0;
@@ -862,7 +862,7 @@ input,
 }
 
 @media screen and (max-width: 1364px) {
-  #Row {
+  .Row {
     padding: 5rem 0;
   }
   #checkIt {
@@ -872,19 +872,19 @@ input,
 }
 
 @media screen and (max-width: 1175px) {
-  #Row p {
+  .Row p {
     font-size: 12pt;
     max-width: 400px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  #Row {
+  .Row {
     flex-direction: column;
     padding: 2rem;
     align-items: center;
   }
-  #project {
+  .project {
     margin-top: 3rem;
   }
   .flexdesk {
@@ -916,7 +916,7 @@ input,
     margin: 0 5px;
     font-size: 10pt;
   }
-  #Row {
+  .Row {
     font-size: 10pt;
   }
   #portCont {

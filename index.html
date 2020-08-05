@@ -12,33 +12,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="home">
+    <section id="home" role="banner">
 
         <div class="canvas" id="particles-js">
             <div class="homeDiv">
                 <h1 class="intro"><span class="highlight">Justin Howard</span> <hr></h1>
-                <div class="intro">Web Developer</div>
+                <div class="intro">Front-End Engineer</div>
                 <a class="view" href="#about"><span>View my Portfolio</a>
             </div>
         </div>
-        <nav class="flexdesk">
-            <div class="link-wrap">
+        <nav class="flexdesk" role="navigation">
                 <a class="page-link" href="#home" id="homeLink">home</a>
                 <a class="page-link" href="#about" id="aboutLink">about</a>
                 <a class="page-link" href="#portfolio1" id="portLink">portfolio</a>
                 <a class="page-link" href="#contact" id="contactLink">contact</a>
-            </div>
-            <i class="mdi mdi-menu"></i>
           </nav>
       </section>
   
-<section id="content">
+<section id="content" role="main">
     <div id="about">
         <h2>ABOUT</h2>
         <hr id="hr">
         <div id="aboutContent">
             <div id="profile">
-                <p>Hello, my name is Justin Howard. I'm an enthusiastic front-end web-developer proficient in HTML5, CSS3, JavaScript and React.</p>
+                <p>Hello, my name is Justin Howard. I'm an enthusiastic front-end web engineer proficient in HTML5, CSS3, JavaScript and React.</p>
                 <img id="profilePic" src="./images/profileHex.png" alt="picture of justin howard">
                 <p>
                 I have a goal-oriented work style and a passion for continuous learning of my craft!
@@ -110,22 +107,22 @@
             <h2 id="portH2">PROJECTS</h2>
             <hr id="portHr">
             <div id="capstone">
-                <a href="https://zorro1rr.github.io/grooving/" target="_blank"><img src="./images/grooving2.gif"/></a>
+                <a href="https://zorro1rr.github.io/grooving/" target="_blank"><img src="./images/grooving2.gif" alt=" gif the the Grooving app"/></a>
                 <p>My capstone app built with React that allows users to cultivate a playlist that can be uploaded to their personal Spotify account.</p>
                 <p>Note: User will be directed to login to their spotify account on page load***</p>
-                <button id="checkIt"><a href="https://zorro1rr.github.io/grooving/" target="_blank" title="Button takes user to grooving website"></a>CHECK IT OUT</button>
+                <button id="checkIt"><a href="https://zorro1rr.github.io/grooving/" target="_blank" aria-label="Button takes user to grooving website"></a>CHECK IT OUT</button>
                 <p>GitHub: <a href="https://github.com/zorro1rr/grooving">https://github.com/zorro1rr/grooving</a></p>
                 
             </div>
-        <div id="Row">
-            <div id="project" class="project1">
+        <div class="Row">
+            <div class="project" id="project1">
                 <h2><a href="https://zorro1rr.github.io/Mighty-Tasty/" target="_blank">Mighty Tasty!</a></h2>
                 <a href="https://zorro1rr.github.io/Mighty-Tasty/" target="_blank" title="Go the Might Tasty Webpage"> <img src="./images/mighty-tasty.gif" alt="gif of mighty-tasty app"></a>
                 <p>App built with React that provides users with information about local businesses via the Yelp api</p>
                 <p><a href="https://github.com/zorro1rr/Mighty-Tasty">https://github.com/zorro1rr/Mighty-Tasty</a></p>
             </div>
                 
-            <div id="project" class="project2">
+            <div class="project" id="project2">
                 <h2><a href="https://zorro1rr.github.io/Weather_App_API/" target="_blank">Weather App</a></h2>
                 <a href="https://zorro1rr.github.io/Weather_App_API/" target="_blank" title="Go the Weather App Webpage">  <img src="./images/weather.gif" alt="gif of weather app">  </a>
             
@@ -134,15 +131,15 @@
             </div>      
         </div>
 
-        <div id="Row">
-            <div id="project" class="project3">
+        <div class="Row">
+            <div class="project" id="project3">
                 <h2><a href="https://zorro1rr.github.io/monster-guessing-game/" target="_blank">AHHH MONSTERS!!!</a></h2>
                 <a href="https://zorro1rr.github.io/monster-guessing-game/" target="_blank" title="Go the Monster Game Webpage"><img src="./images/monster.png" alt="image of monster game"></a> 
                 <p>Guessing game built with Vanilla JS</p>
                 <p><a href="https://github.com/zorro1rr/monster-guessing-game">https://github.com/zorro1rr/monster-guessing-game</a></p>
             </div>
                 
-            <div id="project" class="project4">
+            <div class="project" id="project4">
                 <h2><a href="https://zorro1rr.github.io/rock-paper-scissors/" target="_blank">Rock Paper Scissors</a></h2>
                 <a href="https://zorro1rr.github.io/rock-paper-scissors/" target="_blank" title="Go the rock paper scissor Webpage"><img id="rps" src="./images/rock paper scissors.png" alt="image of rock paper scissors game">  </a>
                 <p>Play a game of rock papper scissors!</p>
@@ -150,15 +147,15 @@
             </div>
         </div>
 
-        <div id="Row">
-            <div id="project" class="project5">
+        <div class="Row">
+            <div class="project" id="project5">
                 <h2><a href="https://zorro1rr.github.io/NYT_API/" target="_blank">New York Times Headlines</a></h2>
                 <a href="https://zorro1rr.github.io/NYT_API/" target="_blank" title="Go my New York Times Headlines Webpage"><img src="./images/NYT.png" alt="screenshot of NYT API project"></a> 
                 <p>This projects ultizes the NYT API to serve users links to the top headlines of the day/</p>
                 <p><a href="https://github.com/zorro1rr/WeatherAppPlugin">https://github.com/zorro1rr/WeatherAppPlugin</a></p>
             </div>
                 
-            <div id="project" class="project6">
+            <div class="project" id="project6">
                 <h2><a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" target="_blank">Flyo Landing Page</a></h2>
                 <a href="https://zorro1rr.github.io/fewd-fylo-landing-page/" target="_blank" title="Go the Flyo Landing Page Webpage"><img src="./images/fylo.png" alt="image of fylo landing page">  </a>
                 <p>I helped create a mock website project using HTML and CSS with two other developers to showcase version control on github.</p>
@@ -195,7 +192,7 @@
           >
           <div class="form-elements">
             <fieldset class="pure-group">
-              <input id="name" name="name" placeholder="Name" />
+              <input id="name" name="name" placeholder="Name" aria-label="name"/>
             </fieldset>
             <fieldset class="pure-group">
               <input
@@ -205,6 +202,7 @@
                 value=""
                 required
                 placeholder="Email"
+                aria-label="email"
               />
             </fieldset>
             <fieldset class="pure-group">
@@ -212,6 +210,7 @@
                 id="message"
                 name="message"
                 placeholder="Message"
+                aria-label="message"
               ></textarea>
             </fieldset>
             <button id="submit">
@@ -227,14 +226,14 @@
     </div>
     <div id="footer">
         <div id="iconRow">
-            <div id="icon">
-                <a href="https://github.com/zorro1rr" target="_blank"><ion-icon name="logo-github" id="iconSvg"></ion-icon></a>
+            <div class="icon">
+                <a href="https://github.com/zorro1rr" target="_blank"><ion-icon name="logo-github" class="iconSvg"></ion-icon></a>
             </div>
-            <div id="icon">
-                <a href="https://www.facebook.com/profile.php?id=100003091600783" target="_blank"><ion-icon name="logo-facebook" id="iconSvg"></ion-icon></a>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100003091600783" target="_blank"><ion-icon name="logo-facebook" class="iconSvg"></ion-icon></a>
             </div>
-            <div id="icon">
-                <a href="https://www.linkedin.com/in/justin-howard-087634193/" target="_blank"><ion-icon name="logo-linkedin" id="iconSvg"></ion-icon></a>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/justin-howard-087634193/" target="_blank"><ion-icon name="logo-linkedin" class="iconSvg"></ion-icon></a>
             </div>
         </div>
     </div>
