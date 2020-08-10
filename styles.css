@@ -463,7 +463,6 @@ html,
   font-weight: 600;
   color: #494949;
   text-transform: uppercase;
-  text-decoration: none;
   background: #ffffff;
   margin: 1rem;
   padding: 20px;
@@ -471,7 +470,9 @@ html,
   display: inline-block;
   transition: all 0.4s ease 0s;
 }
-
+#checkIt a {
+  text-decoration: none;
+}
 #checkIt:hover {
   color: #18bfef;
   background: #ffffff;
