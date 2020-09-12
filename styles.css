@@ -881,6 +881,9 @@ input,
 }
 
 @media screen and (max-width: 1000px) {
+  #particles-js {
+    height: 100vh;
+  }
   .Row {
     flex-direction: column;
     padding: 2rem;
