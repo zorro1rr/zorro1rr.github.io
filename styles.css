@@ -299,7 +299,7 @@ html,
 #textDiv {
   display: flex;
   flex-direction: column;
-  margin-left: -1rem;
+  background-color: #ffffff;
 }
 #css {
   padding-right: 31px;
@@ -347,7 +347,7 @@ html,
 }
 
 #react {
-  margin: 0 61px 0 15px;
+  margin: 0 68px 0 15px;
   width: 134px;
 }
 #reactDiv {
