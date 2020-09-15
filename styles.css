@@ -296,7 +296,7 @@ html,
 #textDiv {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  margin-left: 3px;
 }
 #css {
   padding-right: 31px;
