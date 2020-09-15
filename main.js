@@ -30,53 +30,107 @@ const cHr = document.querySelector("#cHr");
 const submitDiv = document.querySelector("#submitDiv");
 //listen for scrolls and check for position to trigger css animations.
 window.addEventListener("scroll", function () {
-  if (project5.getBoundingClientRect().bottom < 0) {
-    submitDiv.classList.add("active");
-  }
-  if (project5.getBoundingClientRect().top < 0) {
-    aboutH2.classList.add("active");
-    cHr.classList.add("active");
-  }
-  if (project1.getBoundingClientRect().bottom < 0) {
-    project5.classList.add("active");
-    project6.classList.add("active");
-  }
-  if (capstone.getBoundingClientRect().bottom < 0) {
-    project3.classList.add("active");
-    project4.classList.add("active");
-  }
-  if (capstone.getBoundingClientRect().top < 0) {
-    project2.classList.add("active");
-    project1.classList.add("active");
-  }
+  //animations looked bad on mobile so check width first
+  if (window.matchMedia("(min-width: 600px)").matches) {
+    if (project5.getBoundingClientRect().bottom < 0) {
+      submitDiv.classList.add("active");
+    }
+    if (project5.getBoundingClientRect().top < 0) {
+      aboutH2.classList.add("active");
+      cHr.classList.add("active");
+    }
+    if (project1.getBoundingClientRect().bottom < 0) {
+      project5.classList.add("active");
+      project6.classList.add("active");
+    }
+    if (capstone.getBoundingClientRect().bottom < 0) {
+      project3.classList.add("active");
+      project4.classList.add("active");
+    }
+    if (capstone.getBoundingClientRect().top < 0) {
+      project2.classList.add("active");
+      project1.classList.add("active");
+    }
 
-  if (js.getBoundingClientRect().bottom < 0) {
-    capstone.classList.add("active");
-  }
-  if (js.getBoundingClientRect().top < 0) {
-    portHr.classList.add("active");
-    portH2.classList.add("active");
-  }
-  if (js.getBoundingClientRect().top < 0) {
-    portHr.classList.add("active");
-    portH2.classList.add("active");
-  }
+    if (js.getBoundingClientRect().bottom < 0) {
+      capstone.classList.add("active");
+    }
+    if (js.getBoundingClientRect().top < 0) {
+      portHr.classList.add("active");
+      portH2.classList.add("active");
+    }
+    if (js.getBoundingClientRect().top < 0) {
+      portHr.classList.add("active");
+      portH2.classList.add("active");
+    }
 
-  if (homeDev.getBoundingClientRect().bottom < 0) {
-    profile.classList.add("active");
-    html.classList.add("active");
-    css.classList.add("active");
-    js.classList.add("active");
-    react.classList.add("active");
-  }
-  if (homeDev.getBoundingClientRect().top < 0) {
-    about.classList.add("active");
-    hr.classList.add("active");
-  }
-  if (content.getBoundingClientRect().top < 0) {
-    flexdesk.classList.add("active");
+    if (homeDev.getBoundingClientRect().bottom < 0) {
+      profile.classList.add("active");
+      html.classList.add("active");
+      css.classList.add("active");
+      js.classList.add("active");
+      react.classList.add("active");
+    }
+    if (homeDev.getBoundingClientRect().top < 0) {
+      about.classList.add("active");
+      hr.classList.add("active");
+    }
+    if (content.getBoundingClientRect().top < 0) {
+      flexdesk.classList.add("active");
+    } else {
+      flexdesk.classList.remove("active");
+    }
+    //now add mobile classes if width under 600px
   } else {
-    flexdesk.classList.remove("active");
+    if (project5.getBoundingClientRect().bottom < 0) {
+      submitDiv.classList.add("active");
+    }
+    if (project5.getBoundingClientRect().top < 0) {
+      aboutH2.classList.add("mobile");
+      cHr.classList.add("mobile");
+    }
+    if (project1.getBoundingClientRect().bottom < 0) {
+      project5.classList.add("mobile");
+      project6.classList.add("mobile");
+    }
+    if (capstone.getBoundingClientRect().bottom < 0) {
+      project3.classList.add("mobile");
+      project4.classList.add("mobile");
+    }
+    if (capstone.getBoundingClientRect().top < 0) {
+      project2.classList.add("mobile");
+      project1.classList.add("mobile");
+    }
+
+    if (js.getBoundingClientRect().bottom < 0) {
+      capstone.classList.add("mobile");
+    }
+    if (js.getBoundingClientRect().top < 0) {
+      portHr.classList.add("mobile");
+      portH2.classList.add("mobile");
+    }
+    if (js.getBoundingClientRect().top < 0) {
+      portHr.classList.add("mobile");
+      portH2.classList.add("mobile");
+    }
+
+    if (homeDev.getBoundingClientRect().bottom < 0) {
+      profile.classList.add("active");
+      html.classList.add("active");
+      css.classList.add("active");
+      js.classList.add("active");
+      react.classList.add("active");
+    }
+    if (homeDev.getBoundingClientRect().top < 0) {
+      about.classList.add("active");
+      hr.classList.add("active");
+    }
+
+    if (content.getBoundingClientRect().top < 0) {
+      flexdesk.classList.add("active");
+    } else {
+      flexdesk.classList.remove("active");
+    }
   }
 });
 //check for scrolls for  nav bar highlights (made second event listener for readability)
